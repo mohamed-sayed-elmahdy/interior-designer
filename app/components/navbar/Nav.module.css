@@ -1,0 +1,130 @@
+/* nav style */
+.mainContainer {
+    z-index: 1000;
+}
+
+.navContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 23px 53px;
+    z-index: 1000;
+}
+
+.navContainer .links {
+    justify-content: center;
+    gap: 39px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    padding-right: 2rem;
+}
+
+.navContainer .links .link {
+    transition: all 0.3s;
+    position: relative;
+    text-decoration: none;
+}
+
+.navContainer .links .link:hover {
+   
+    color: #fddf8b;
+    background-clip: text;
+    transform: translateY(-2px);
+}
+
+
+
+.navMobileContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 8px;
+}
+
+.navMobileContainer .logoContainer {
+    margin-left: 1rem;
+}
+
+.navMobileContainer .links {
+    padding: 10px 10px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.navMobileContainer .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.navMobileContainer .closeIcon {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.navMobileContainer .menuIcon {
+    color: white;
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 1.5rem;
+}
+
+.navMobileContainer .showSidebar {
+    width: 44%;
+}
+
+.navMobileContainer .link {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-image: linear-gradient(90.02deg, #00e5d1 -27.56%, #2577f9 43.56%);
+    color: transparent;
+    background-clip: text;
+    transform: translateY(-2px);
+}
+
+@media screen and (min-width: 855px) {
+    .navMobileContainer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 854px) {
+    .navContainer {
+        display: none;
+    }
+
+    .navMobileContainer .menuIcon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navMobileContainer .showSidebar {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navMobileContainer .showSidebar {
+        width: 80%;
+    }
+}
