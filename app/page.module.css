@@ -155,14 +155,14 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
+
   margin-top: 0.9rem;
 }
 .porjectsSection .imgaesSlider .icon {
   color: #fddf8b;
   font-weight: 700;
   font-size: 70px;
-  margin: 0 1.5rem;
+  margin: 0  0 0 0.7rem;
   cursor: pointer;
 }
 .porjectsSection .imgContainer {
@@ -197,9 +197,8 @@
 }
 /* end projects Section  */
 /* start sun Section  */
-
 .sunSection {
-  margin: 2rem auto;
+  margin: 6rem auto 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -223,7 +222,7 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 99%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -245,7 +244,6 @@
 .sunSection .sunImage3 {
   top: 380px;
   left: 300px;
-
 }
 
 .sunSection .suntitle {
@@ -258,3 +256,97 @@
   z-index: 2;
 }
 /* end sun Section  */
+@media (max-width: 1430px) {
+
+  .sunSection .sunImage1 {
+    top: 240px;
+    right: 150px;
+    z-index: 1;
+  }
+  .sunSection .sunImage2 {
+    top: 40px;
+    left: 100px;
+  }
+  .sunSection .sunImage3 {
+    top: 380px;
+    left: 150px;
+  }
+  .sunSection .suntitle {
+    left: 180px;
+  }
+ }
+ @media (max-width: 1270px) { 
+
+  .sunSection .sunImage1 {
+    top: 240px;
+    right: 130px;
+    z-index: 1;
+  }
+  .sunSection .sunImage2 {
+    top: 40px;
+    left: 50px;
+  }
+  .sunSection .sunImage3 {
+    top: 380px;
+    left: 80px;
+  }
+  .sunSection .suntitle {
+    top: 280px;
+    left: 110px;
+  
+  }
+ }
+ @media (max-width: 1190px) {
+
+  .sunSection .sunImage1 {
+    top: 240px;
+    right: 90px;
+    z-index: 1;
+  }
+  .sunSection .sunImage2 {
+    top: 40px;
+    left: 40px;
+  }
+  .sunSection .sunImage3 {
+    top: 380px;
+    left: 60px;
+  }
+  .sunSection .suntitle {
+    top: 280px;
+    left: 90px;
+  
+  }
+ }
+@media (max-width: 1110px) {
+  .homesectionContainer h1 {
+    font-size: 82px;
+    color: white;
+    font-weight: 600;
+    padding-left: 4rem;
+    margin-top: 5rem;
+  }
+  .porjectsSection .imgaesSlider {
+    gap: 0.9rem;
+  }
+  .porjectsSection .imgaesSlider .icon {
+    font-size: 60px;
+  }
+  .sunSection .sunImage1 {
+    top: 240px;
+    right: 30px;
+    z-index: 1;
+  }
+  .sunSection .sunImage2 {
+    top: 40px;
+    left: 20px;
+  }
+  .sunSection .sunImage3 {
+    top: 380px;
+    left: 40px;
+  }
+  .sunSection .suntitle {
+    top: 280px;
+    left: 70px;
+  
+  }
+}
